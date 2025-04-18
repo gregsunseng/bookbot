@@ -9,10 +9,12 @@ from stats import get_characters
 
 
 def main():
-    frankensteins_characters = get_characters(get_book_text("books/frankenstein.txt"))
+    print("============ BOOKBOT ============")
+    print("Analyzing book found at books/frankenstein.txt...")
+    print("----------- Word Count ----------")
     print(f"{num_words(get_book_text ("books/frankenstein.txt"))} words found in the document")
-    print()
-    print(frankensteins_characters)
+    print("--------- Character Count -------")
+    print(get_characters(get_book_text("books/frankenstein.txt")))
 
 main()
 

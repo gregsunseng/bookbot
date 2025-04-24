@@ -1,3 +1,5 @@
+import sys
+
 def get_book_text (file_path):
     with open(file_path) as f:
         file_contents = f.read()
@@ -15,7 +17,7 @@ def main():
     print("Analyzing book found at books/frankenstein.txt...")
 
     # Read the book text from the file
-    text = get_book_text("books/frankenstein.txt")
+    text = get_book_text("")
 
     # Print the word count
     print("----------- Word Count ----------")
